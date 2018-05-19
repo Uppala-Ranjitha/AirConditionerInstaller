@@ -107,7 +107,7 @@
                 style="@style/editTextStyle"
                 android:layout_width="match_parent"
                 android:hint="@string/pan"
-                android:inputType="number"
+                android:inputType="textCapCharacters"
                 android:textSize="15sp" />
             </RelativeLayout>
 
