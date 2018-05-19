@@ -50,22 +50,29 @@ public class SignUp extends AppCompatActivity {
         String isacc = accnum.getText().toString();
         String pasword = pas.getText().toString();
         String cpasword = cpas.getText().toString();
+        
+        //Added by Aniruddh. E comment nv delete chesko.
+        Boolean goodToGo = true;
+        
         if (TextUtils.isEmpty(isfn)) {
             msg = "You must enter your first name";
             TextView ln1 = (TextView) findViewById(R.id.confirm_star_fname);
             ln1.setText(msg);
+            goodToGo = false;
         }
 
         if (TextUtils.isEmpty(isln)) {
             msg = "You must enter your last name";
             TextView ln2 = (TextView) findViewById(R.id.confirm_star_lname);
             ln2.setText(msg);
+            goodToGo = false;
         }
 
         if (TextUtils.isEmpty(isem)) {
             msg = "You must enter your mail id";
             TextView mail = (TextView) findViewById(R.id.confirm_star_email);
             mail.setText(msg);
+            goodToGo = false;
         }
 
         if (TextUtils.isEmpty(ispan)) {
@@ -78,42 +85,53 @@ public class SignUp extends AppCompatActivity {
             msg = "You must enter your aadhar number";
             TextView ln4 = (TextView) findViewById(R.id.confirm_star_aadhar);
             ln4.setText(msg);
+            goodToGo = false;
         }
 
         if (TextUtils.isEmpty(isbname)) {
             msg = "You must enter your bank name";
             TextView ln5 = (TextView) findViewById(R.id.confirm_star_bank_name);
             ln5.setText(msg);
+            goodToGo = false;
         }
 
         if (TextUtils.isEmpty(isbrname)) {
             msg = "You must enter your branch name";
             TextView ln6 = (TextView) findViewById(R.id.confirm_star_branch);
             ln6.setText(msg);
+            goodToGo = false;
         }
 
         if (TextUtils.isEmpty(isacc)) {
             msg = "You must enter your account number";
             TextView ln7 = (TextView) findViewById(R.id.confirm_star_acc);
             ln7.setText(msg);
+            goodToGo = false;
         }
 
         if (TextUtils.isEmpty(isifsc)) {
             msg = "You must enter your IFSC code";
             TextView ln8 = (TextView) findViewById(R.id.confirm_star_ifsc);
             ln8.setText(msg);
+            goodToGo = false;
         }
 
         if (TextUtils.isEmpty(pasword)) {
             msg = "Enter password";
             TextView ln9 = (TextView) findViewById(R.id.confirm_star_password);
             ln9.setText(msg);
+            goodToGo = false;
         }
 
         if ((TextUtils.isEmpty(cpasword)) || (pasword.equals(cpasword))) {
             msg = "Please confirm your password";
             TextView ln10 = (TextView) findViewById(R.id.confirm_star_cpassword);
             ln10.setText(msg);
+            goodToGo = false;
+        }
+        
+        if (goodToGo){
+        Toast.makeText(this, "You are good to go!", Toast.LENGTH_SHORT).show();
         }
         
 
