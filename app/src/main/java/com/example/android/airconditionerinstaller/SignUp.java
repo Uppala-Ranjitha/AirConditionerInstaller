@@ -50,72 +50,89 @@ public class SignUp extends AppCompatActivity {
         String isacc = accnum.getText().toString();
         String pasword = pas.getText().toString();
         String cpasword = cpas.getText().toString();
-        if (TextUtils.isEmpty(isfn)) {
+
+        Boolean sfn = TextUtils.isEmpty(isfn);
+        Boolean sln = TextUtils.isEmpty(isln);
+        Boolean sem =TextUtils.isEmpty(isem);
+        Boolean span = TextUtils.isEmpty(ispan);
+        Boolean saadhar = TextUtils.isEmpty(isaadhar);
+        Boolean sbname = TextUtils.isEmpty(isbname);
+        Boolean sbrname = TextUtils.isEmpty(isbrname);
+        Boolean sacc = TextUtils.isEmpty(isacc);
+        Boolean sifsc = TextUtils.isEmpty(isifsc);
+        Boolean sp = TextUtils.isEmpty(isifsc);
+        Boolean scp = (TextUtils.isEmpty(cpasword)) || (pasword.equals(cpasword));
+
+
+        if (sfn) {
             msg = "You must enter your first name";
             TextView ln1 = (TextView) findViewById(R.id.confirm_star_fname);
             ln1.setText(msg);
         }
 
-        if (TextUtils.isEmpty(isln)) {
+        if (sln) {
             msg = "You must enter your last name";
             TextView ln2 = (TextView) findViewById(R.id.confirm_star_lname);
             ln2.setText(msg);
         }
 
-        if (TextUtils.isEmpty(isem)) {
+        if (sem) {
             msg = "You must enter your mail id";
             TextView mail = (TextView) findViewById(R.id.confirm_star_email);
             mail.setText(msg);
         }
 
-        if (TextUtils.isEmpty(ispan)) {
+        if (span) {
             msg = "You must enter your pan number";
             TextView ln3 = (TextView) findViewById(R.id.confirm_star_pan);
             ln3.setText(msg);
         }
 
-        if (TextUtils.isEmpty(isaadhar)) {
+        if (saadhar) {
             msg = "You must enter your aadhar number";
             TextView ln4 = (TextView) findViewById(R.id.confirm_star_aadhar);
             ln4.setText(msg);
         }
 
-        if (TextUtils.isEmpty(isbname)) {
+        if (sbname) {
             msg = "You must enter your bank name";
             TextView ln5 = (TextView) findViewById(R.id.confirm_star_bank_name);
             ln5.setText(msg);
         }
 
-        if (TextUtils.isEmpty(isbrname)) {
+        if (sbrname) {
             msg = "You must enter your branch name";
             TextView ln6 = (TextView) findViewById(R.id.confirm_star_branch);
             ln6.setText(msg);
         }
 
-        if (TextUtils.isEmpty(isacc)) {
+        if (sacc) {
             msg = "You must enter your account number";
             TextView ln7 = (TextView) findViewById(R.id.confirm_star_acc);
             ln7.setText(msg);
         }
 
-        if (TextUtils.isEmpty(isifsc)) {
+        if (sifsc) {
             msg = "You must enter your IFSC code";
             TextView ln8 = (TextView) findViewById(R.id.confirm_star_ifsc);
             ln8.setText(msg);
         }
 
-        if (TextUtils.isEmpty(pasword)) {
+        if (sp) {
             msg = "Enter password";
             TextView ln9 = (TextView) findViewById(R.id.confirm_star_password);
             ln9.setText(msg);
         }
 
-        if ((TextUtils.isEmpty(cpasword)) || (pasword.equals(cpasword))) {
+        if (scp) {
             msg = "Please confirm your password";
             TextView ln10 = (TextView) findViewById(R.id.confirm_star_cpassword);
             ln10.setText(msg);
         }
-        
+        if((! scp) && (! sp) && (! sifsc) && (! sacc) && (! sbrname) && (! sbname) && (! saadhar) && (! span) && (! sem) && (! sln) && (! sfn)){
+            Toast.makeText(SignUp.this, "Your account details are saved",
+                    Toast.LENGTH_SHORT).show();
+        }
 
     }
 }
