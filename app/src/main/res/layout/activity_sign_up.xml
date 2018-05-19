@@ -47,7 +47,7 @@
                     style="@style/editTextStyle"
                     android:layout_width="match_parent"
                     android:hint="@string/fname"
-                    android:inputType="textCapCharacters"
+                    android:inputType="text"
                     android:textSize="15sp" />
             </RelativeLayout>
 
