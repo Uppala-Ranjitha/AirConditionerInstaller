@@ -61,7 +61,7 @@ public class SignUp extends AppCompatActivity {
         Boolean sacc = TextUtils.isEmpty(isacc);
         Boolean sifsc = TextUtils.isEmpty(isifsc);
         Boolean sp = TextUtils.isEmpty(isifsc);
-        Boolean scp = (TextUtils.isEmpty(cpasword)) || (pasword.equals(cpasword));
+        Boolean scp = (TextUtils.isEmpty(cpasword)) || (!(pasword.equals(cpasword)));
 
 
         if (sfn) {
@@ -132,6 +132,30 @@ public class SignUp extends AppCompatActivity {
         if((! scp) && (! sp) && (! sifsc) && (! sacc) && (! sbrname) && (! sbname) && (! saadhar) && (! span) && (! sem) && (! sln) && (! sfn)){
             Toast.makeText(SignUp.this, "Your account details are saved",
                     Toast.LENGTH_SHORT).show();
+            msg = "*";
+            TextView ln10 = (TextView) findViewById(R.id.confirm_star_cpassword);
+            ln10.setText(msg);
+            TextView ln9 = (TextView) findViewById(R.id.confirm_star_password);
+            ln9.setText(msg);
+            TextView ln8 = (TextView) findViewById(R.id.confirm_star_ifsc);
+            ln8.setText(msg);
+            TextView ln7 = (TextView) findViewById(R.id.confirm_star_acc);
+            ln7.setText(msg);
+            TextView ln6 = (TextView) findViewById(R.id.confirm_star_branch);
+            ln6.setText(msg);
+            TextView ln5 = (TextView) findViewById(R.id.confirm_star_bank_name);
+            ln5.setText(msg);
+            TextView ln4 = (TextView) findViewById(R.id.confirm_star_aadhar);
+            ln4.setText(msg);
+            TextView mail = (TextView) findViewById(R.id.confirm_star_email);
+            mail.setText(msg);
+            TextView ln3 = (TextView) findViewById(R.id.confirm_star_pan);
+            ln3.setText(msg);
+            TextView ln2 = (TextView) findViewById(R.id.confirm_star_lname);
+            ln2.setText(msg);
+            TextView ln1 = (TextView) findViewById(R.id.confirm_star_fname);
+            ln1.setText(msg);
+
         }
 
     }
