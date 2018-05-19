@@ -4,5 +4,50 @@
     <string name="password">Password:</string>
     <string name="go_to_login">login</string>
     <string name="no_account">have no account??</string>
+
+
     <string name="sign_up">sign up</string>
+    <string name="confirm">*</string>
+    <string name="fname">Firstname:</string>
+    <string name="lname">Lastname:</string>
+    <string name="Country">Country:</string>
+    <string name="phn">phone number:</string>
+    <string name="pan">pan number:</string>
+    <string name="aadhar">Aadhar Number:</string>
+    <string name="bank">Bank Name:</string>
+    <string name="bank_account">Bank account number</string>
+    <string name="branch">Branch:</string>
+    <string name="ifsc">IFSC num:</string>
+    <string name="sign">sign up</string>
+
+
+
+
+
+    <string name="login_prferance">org.sairaa.scholarquiz.login_preference</string>
+    <string name="login_status_preference">org.sairaa.scholarquiz.login_status_preference</string>
+    <string name="quizId_moderator">org.sairaa.scholarquiz.quizId_moderator</string>
+    <string name="quizName_moderator">org.sairaa.scholarquiz.quizName_moderator</string>
+    <string name="quiz_published_or_not">org.sairaa.scholarquiz.quizId_published_moderator</string>
+    <string name="login_heading">Log In</string>
+    <string name="login_email_hint">Enter Email Id</string>
+    <string name="login_pwd_hint">Enter Password</string>
+    <string name="remem_checkbox">Remember me</string>
+    <string name="forgot_textview">Forgot Password?</string>
+    <string name="newUser">Don\'t have an account yet?</string>
+    <string name="regLogIn">Sign Up</string>
+
+
+
+    <string name="regHeading">Sign Up</string>
+    <string name="user_name">Your Full Name</string>
+    <string name="reg_Email_id">Your E-mail id</string>
+    <string name="slack_id">Your Slack id</string>
+    <string name="spash_screen_bt">Made with \u2764 by Udacitians</string>
+    <string name="password1">Create Password</string>
+    <string name="password2">Confirm Password</string>
+    <string name="additional_info">Phone No:</string>
+    <string name="signup">Sign Up</string>
+    <string name="alreadyUser">Already a User?</string>
+    <string name="loginHere">Sign In</string>
 </resources>

@@ -1,9 +1,331 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".SignUp">
 
-</android.support.constraint.ConstraintLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_centerVertical="true"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:padding="18dp"
+            android:text="@string/regHeading"
+            android:textColor="?android:attr/textColorPrimary"
+            android:textSize="30sp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="14dp">
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/confirm_star_fname"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/confirm"
+                    android:theme="@style/AppTheme.ConfirmStyle" />
+
+                <EditText
+                    android:layout_below="@id/confirm_star_fname"
+                    android:id="@+id/first_name"
+                    style="@style/editTextStyle"
+                    android:layout_width="match_parent"
+                    android:hint="@string/fname"
+                    android:inputType="textCapCharacters"
+                    android:textSize="15sp" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/confirm_star_lname"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/confirm"
+                android:theme="@style/AppTheme.ConfirmStyle" />
+            <EditText
+                android:layout_below="@id/confirm_star_lname"
+                android:id="@+id/last_name"
+                style="@style/editTextStyle"
+                android:layout_width="match_parent"
+                android:hint="@string/lname"
+                android:inputType="text"
+                android:textSize="15sp" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/confirm_star_email"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/confirm"
+                android:theme="@style/AppTheme.ConfirmStyle" />
+            <EditText
+                android:layout_below="@id/confirm_star_email"
+                android:id="@+id/email_reg"
+                style="@style/editTextStyle"
+                android:layout_width="match_parent"
+                android:hint="@string/reg_Email_id"
+                android:inputType="textEmailAddress"
+                android:textSize="15sp" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/confirm_star_country"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/confirm"
+                android:theme="@style/AppTheme.ConfirmStyle" />
+            <EditText
+                android:layout_below="@id/confirm_star_country"
+                android:id="@+id/country"
+                style="@style/editTextStyle"
+                android:layout_width="match_parent"
+                android:hint="@string/Country"
+                android:inputType="text"
+                android:textSize="15sp" />
+            </RelativeLayout>
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/confirm_star_pan"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/confirm"
+                android:theme="@style/AppTheme.ConfirmStyle" />
+            <EditText
+                android:layout_below="@id/confirm_star_pan"
+                android:id="@+id/pan_num"
+                style="@style/editTextStyle"
+                android:layout_width="match_parent"
+                android:hint="@string/pan"
+                android:inputType="number"
+                android:textSize="15sp" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/confirm_star_aadhar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/confirm"
+                android:theme="@style/AppTheme.ConfirmStyle" />
+            <EditText
+                android:layout_below="@id/confirm_star_aadhar"
+                android:id="@+id/aadhar_num"
+                style="@style/editTextStyle"
+                android:layout_width="match_parent"
+                android:hint="@string/aadhar"
+                android:inputType="number"
+                android:textSize="15sp" />
+            </RelativeLayout>
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/confirm_star_bank_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/confirm"
+                android:theme="@style/AppTheme.ConfirmStyle" />
+
+            <EditText
+                android:layout_below="@id/confirm_star_bank_name"
+                android:id="@+id/bank_name"
+                style="@style/editTextStyle"
+                android:layout_width="match_parent"
+                android:hint="@string/bank"
+                android:inputType="text"
+                android:textSize="15sp" />
+            </RelativeLayout>
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/confirm_star_branch"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/confirm"
+                android:theme="@style/AppTheme.ConfirmStyle" />
+            <EditText
+                android:layout_below="@id/confirm_star_branch"
+                android:id="@+id/branch_name"
+                style="@style/editTextStyle"
+                android:layout_width="match_parent"
+                android:hint="@string/branch"
+                android:inputType="text"
+                android:textSize="15sp" />
+            </RelativeLayout>
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/confirm_star_acc"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/confirm"
+                android:theme="@style/AppTheme.ConfirmStyle" />
+
+            <EditText
+                android:layout_below="@id/confirm_star_acc"
+                android:id="@+id/bank_acc"
+                style="@style/editTextStyle"
+                android:layout_width="match_parent"
+                android:hint="@string/bank_account"
+                android:inputType="number"
+                android:textSize="15sp" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/confirm_star_ifsc"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/confirm"
+                android:theme="@style/AppTheme.ConfirmStyle" />
+            <EditText
+                android:layout_below="@id/confirm_star_ifsc"
+                android:id="@+id/ifsc_num"
+                style="@style/editTextStyle"
+                android:layout_width="match_parent"
+                android:hint="@string/ifsc"
+                android:inputType="text"
+                android:textSize="15sp" />
+            </RelativeLayout>
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/confirm_star_password"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/confirm"
+                android:theme="@style/AppTheme.ConfirmStyle" />
+            <EditText
+                android:layout_below="@id/confirm_star_password"
+                android:id="@+id/password_reg"
+                style="@style/editTextStyle"
+                android:layout_width="match_parent"
+                android:hint="@string/password1"
+                android:inputType="textPassword"
+                android:textSize="15sp" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/confirm_star_cpassword"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/confirm"
+                android:theme="@style/AppTheme.ConfirmStyle" />
+            <EditText
+                android:layout_below="@id/confirm_star_cpassword"
+                android:id="@+id/confirm_password_reg"
+                style="@style/editTextStyle"
+                android:layout_width="match_parent"
+                android:hint="@string/password2"
+                android:inputType="textPassword"
+                android:textSize="15sp" />
+            </RelativeLayout>
+
+            
+            <EditText
+                android:id="@+id/info_reg"
+                style="@style/editTextStyle"
+                android:layout_width="match_parent"
+                android:hint="@string/additional_info"
+                android:inputType="number"
+                android:textSize="15sp" />
+
+            <Button
+                android:id="@+id/register_button"
+                style="@style/buttonStyle"
+                android:layout_width="150dp"
+                android:layout_height="40dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="12dp"
+                android:text="@string/signup" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginBottom="9dp"
+            android:layout_marginTop="18dp"
+            android:orientation="vertical"
+            android:padding="12dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginRight="3dp"
+                android:layout_weight="1"
+                android:text="@string/alreadyUser"
+                android:textSize="18sp"
+                android:theme="@style/checkBoxStyle" />
+
+            <Button
+                android:id="@+id/register_sign_in"
+                style="@style/Widget.AppCompat.Button.Borderless"
+                android:layout_width="150dp"
+                android:layout_height="40dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="8dp"
+                android:layout_weight="1"
+                android:backgroundTint="@color/colorPrimaryDark"
+                android:gravity="center"
+                android:text="@string/loginHere"
+                android:textAlignment="center"
+                android:textAllCaps="true"
+                android:textColor="@android:color/black"
+                android:textSize="16sp"
+                android:onClick="goToLogIn"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</ScrollView>

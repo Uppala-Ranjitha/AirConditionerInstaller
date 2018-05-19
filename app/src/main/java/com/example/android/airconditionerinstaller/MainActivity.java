@@ -22,9 +22,9 @@ public class MainActivity extends AppCompatActivity {
         logIn();
     }
     public void logIn(){
-        mailid = (EditText) findViewById(R.id.mail_text);
-        password = (EditText) findViewById(R.id.password_text);
-        login_btn = (Button) findViewById(R.id.login);
+        mailid = (EditText) findViewById(R.id.email_login);
+        password = (EditText) findViewById(R.id.password_login);
+        login_btn = (Button) findViewById(R.id.signin_login);
         password.setTransformationMethod(HideReturnsTransformationMethod.getInstance());
         login_btn.setOnClickListener(new View.OnClickListener() {
             @Override
